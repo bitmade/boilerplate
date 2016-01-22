@@ -1,0 +1,15 @@
+{
+  "name": "bitmade-boilerplate",
+  "version": "1.0.0",
+  "dependencies": {
+    "style-helper": "github:bitmade/style-helper"
+  },
+  "devDependencies": {
+    "bitmade-dev-tools": "github:bitmade/dev-tools"
+  },
+  "scripts": {
+    "dev": "./node_modules/.bin/bitmade-dev-server",
+    "dev-fs": "./node_modules/.bin/bitmade-dev-server --build-assets",
+    "build": "NODE_ENV=production ./node_modules/.bin/bitmade-project-export"
+  }
+}

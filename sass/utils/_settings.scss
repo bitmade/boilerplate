@@ -1,0 +1,104 @@
+////
+/// Global configuration
+/// Summary of all configurable variables within style-helpers.
+/// Uncomment and use in mixins or functions to replace defaults
+////
+
+// default colors
+//$primary: black;
+//$secondary: gray;
+
+/// Colormap to organize project-colors
+/// @type Map
+/// @prop {String} key - Placeholder for project-colors
+/// @prop {Color} value - A color-value mapped to the key
+//$colors: (
+//  primary: red,
+//  secondary: green
+//);
+
+// breakpoints
+//$small: 320px;
+//$medium: 768px;
+//$large: 1024px;
+//$big: 1280px;
+//$huge: 1440px;
+
+/// Default amount of columns to use by `$susy`
+/// @type Number
+//$columns: 12;
+
+/// The default page-width
+/// @type Number
+//$page-width: 1200px;
+
+/// Default column-width in pixels for usage with `$susy`
+/// @type Number
+//$column-width: 80px;
+
+/// Default gutter-width in pixels for usage with `$susy`
+/// @type Number
+//$gutter-width: 20px;
+
+/// Susy-Grid-Setup
+/// Initializes a custom Susy-Configuration to create a grid.
+/// @type Map
+/// @prop {String} key - Setting-keywords that are required by Susy to build a grey
+/// @prop {String | Number} value - A value mapped to the settings
+/// @requires $columns
+/// @requires $column-width
+/// @requires $gutter-width
+/// @link http://susy.oddbird.net// Susy-Framework
+//$susy: (
+//  columns: $columns,
+//  column-width: $column-width,
+//  gutters: $gutter-width / $column-width,
+//  math: fluid,
+//  output: float,
+//  gutter-position: inside-static,
+//);
+
+/// Z-indexes map, gathers all releveant z-layers
+/// @type Map
+/// @prop {String} key - Layer’s name
+/// @prop {Number} value - Z value mapped to the key
+//$z-indexes: (
+//  'heaven': 9000,
+//  'high': 100,
+//  'default': 1,
+//  'low': -1,
+//  'bottomless-pit': -9999
+//);
+
+/// Default-fontsize
+/// @type Number
+//$fontsize: 16px;
+
+/// Default line-height
+/// @type Number
+/// @requires $fontsize
+//$lineheight: $fontsize * 1.25;
+
+/// Fallback font-set
+/// @type String
+//$font-fallback: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+
+/// List of all headline selectors
+/// @type List
+//$headings: h1, h2, h3, h4, h5, h6;
+
+/// List of all (basic) text-block selectors
+/// @type List
+//$text-blocks: p, ul, ol, dl;
+
+/// Helper to reset the top margin
+//%reset-margin-top {
+//  margin-top: 0;
+//}
+
+/// Helper to set top and bottom margin on elements
+/// @requires $fontsize
+//%text-margin {
+//  margin-top: $fontsize * 2;
+//  margin-bottom: $fontsize * 2;
+//}

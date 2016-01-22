@@ -1,0 +1,44 @@
+// global style and initial setup
+
+html {
+  // initializing default viewport
+  @include page-init();
+}
+
+body {
+  // global font-setting
+  @include set-font();
+}
+
+a {
+  text-decoration: none;
+}
+
+*:focus {
+  // removing ugly dotted borders on focused elements
+  outline: none;
+}
+
+// global input-element styles
+button,
+input[type=submit],
+input[type=text],
+input[type=password],
+input[type=email],
+textarea {
+  // removing iOS-specific attributes
+  -webkit-appearance: none;
+}
+
+// basic responsive behaviour for images and iframes
+img,
+iframe {
+  display: block;
+  width: 100%; // setting the images to 100% to make them fit everywhere
+  max-width: 100%;
+}
+
+table {
+  // make sure tables always use all available horizontal space
+  width: 100%;
+}

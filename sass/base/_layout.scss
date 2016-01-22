@@ -1,0 +1,4 @@
+// basic centered container
+.container {
+  @include container($bm-page-width);
+}

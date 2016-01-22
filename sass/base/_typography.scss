@@ -1,0 +1,20 @@
+@include set-text-blocks();
+@include set-headings();
+
+em,
+i {
+  font-style: italic;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
