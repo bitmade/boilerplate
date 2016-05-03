@@ -1,4 +1,4 @@
-# boilerplate
+# Bitmade Boilerplate 2.0
 
 - `npm run dev` - Start development server and serve temporary assets
 - `npm run dev-fs` - Start development server and write assets to filesystem
