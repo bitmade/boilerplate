@@ -35,3 +35,6 @@ node_modules
 
 # Exclude generated HTML files
 # public/**/*.html
+
+# Exclude IDEA platform files
+.idea
