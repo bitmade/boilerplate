@@ -2,11 +2,11 @@
   "name": "bitmade-boilerplate",
   "version": "2.2.0",
   "dependencies": {
-    "cross-env": "^3.1.2",
     "style-helper": "github:bitmade/style-helper"
   },
   "devDependencies": {
     "bitmade-dev-tools": "github:bitmade/dev-tools",
+    "cross-env": "^3.1.2",
     "webpack-config": "^3.1.0"
   },
   "scripts": {
