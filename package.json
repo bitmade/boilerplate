@@ -1,18 +1,16 @@
 {
-  "name": "bitmade-boilerplate",
-  "version": "2.2.0",
+  "name": "@bitmade/boilerplate",
+  "version": "3.0.0",
   "dependencies": {
-    "style-helper": "github:bitmade/style-helper"
+    "@bitmade/style-helper": "^1.1.1"
   },
   "devDependencies": {
-    "bitmade-dev-tools": "github:bitmade/dev-tools",
-    "cross-env": "^3.1.2",
-    "webpack-config": "^3.1.0"
+    "@bitmade/dev-tools": "^4.0.0"
   },
   "scripts": {
-    "dev": "bitmade-dev-server",
-    "dev-fs": "bitmade-dev-server --build-assets",
-    "build": "cross-env NODE_ENV=production bitmade-project-export --compile-assets",
-    "export": "cross-env NODE_ENV=production bitmade-project-export --compile-assets --compile-templates"
+    "dev": "bitmade-dev-tools server --mode=stream",
+    "dev-fs": "bitmade-dev-tools server --mode=write",
+    "build": "bitmade-dev-tools export --js --css",
+    "export": "bitmade-dev-tools export --js --css --html"
   }
 }
