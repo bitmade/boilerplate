@@ -1,6 +1,6 @@
 {
   "name": "@bitmade/boilerplate",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "dependencies": {
     "@bitmade/style-helper": "^1.1.1"
   },
@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "bitmade-dev-tools server --mode=stream",
     "dev-fs": "bitmade-dev-tools server --mode=write",
-    "build": "bitmade-dev-tools export --js --css",
-    "export": "bitmade-dev-tools export --js --css --html"
+    "build": "bitmade-dev-tools build --js --css",
+    "export": "bitmade-dev-tools build --js --css --html"
   }
 }
