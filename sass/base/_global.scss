@@ -3,6 +3,13 @@
 html {
   // initializing default viewport
   @include page-init();
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
